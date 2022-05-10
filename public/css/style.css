@@ -823,7 +823,7 @@ input[type=text] {
 .page-title-section {
    /* background-image: url("/images/page-title/1.jpg");*/
    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
-    url('/images/page-title/1.jpg');
+    url('http://46.105.120.83/fp/fp/public/images/page-title/1.jpg');
     background-position: center center;
     background-size: cover;
     background-color: rgba(000, 0, 0, 0.7);
