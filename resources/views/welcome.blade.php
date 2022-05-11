@@ -12,7 +12,7 @@
                     <div class="col-sm-6" style="color: 	#008000;">
                         <h2 style="color: 	#008000;">Ensemble finançons</h2>
                         <H4 style="color: 	#008000;">Les projets de nos villes et territoires.</H4>
-                        <a class="btn btn-red" href="#">Participer</a>
+                        <a class="btn btn-red" href="#">je contribue</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                     <div class="col-sm-6">
                         <h2>Ensemble finançons</h2>
                         <p>Les projets de nos villes et territoires.</p>
-                        <a class="btn btn-red" href="#">Participer</a>
+                        <a class="btn btn-red" href="#">je contribue</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                 <div class="fact-wrap">
                     <div class="fact-icon"><i class="fa fa-yelp" aria-hidden="true"></i></div>
                     <div class="fact-details">
-                        <div class="fact-count">9,821</div>
+                        <div class="fact-count">0</div>
                         <div class="fact-info">Projets à financer</div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                 <div class="fact-wrap">
                     <div class="fact-icon"><i class="fa fa-plug" aria-hidden="true"></i></div>
                     <div class="fact-details">
-                        <div class="fact-count">78,520</div>
+                        <div class="fact-count">0</div>
                         <div class="fact-info">projets financés</div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                 <div class="fact-wrap">
                     <div class="fact-icon"><i class="fa fa-forumbee" aria-hidden="true"></i></div>
                     <div class="fact-details">
-                        <div class="fact-count">25,003</div>
+                        <div class="fact-count">0</div>
                         <div class="fact-info">Bénéficiaires</div>
                     </div>
                 </div>
@@ -92,8 +92,8 @@
                 <div class="fact-wrap">
                     <div class="fact-icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></div>
                     <div class="fact-details">
-                        <div class="fact-count">103,210</div>
-                        <div class="fact-info">Participer</div>
+                        <div class="fact-count">0</div>
+                        <div class="fact-info">je contribue</div>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <h1 class="intro-title">Qui sommes <span>nous ?</span></h1>
-                <p style="font-size: 20px;"> <b>Yelen-Fin en abrégé (Y-Fin)</b>  est une plateforme de financement participatif (crowdfunding) crée par Enda ECOPOP ,
+                <p style="font-size: 20px;"> <b>Ye-Fina en abrégé (Y-Fin)</b>  est une plateforme de financement participatif (crowdfunding) crée par Enda ECOPOP ,
                      pour appuyer les projets et programmes de développement des collectivités et des villes africaines.</p>
             </div>
         </div>
@@ -129,7 +129,7 @@
                         <h3 class="recent-cause-title"><a href="{{ route('front.one.projet', ['id'=>$projet->id]) }}">{{ $projet->titre }}</a></h3>
                         <div class="cause-location"><i class="fa fa-globe" aria-hidden="true"></i> <a href="#">{{ $projet->lieu }}</a> </div>
                         <div class="cause-tags"><i class="fa fa-tags" aria-hidden="true"></i> <a href="#">{{ $projet->categorie }}</a></div>
-                        <a class="btn mg-top-40">Participer</a>
+                        <a class="btn mg-top-40" href="{{ route('view.form.donnation', ['id'=>$projet->id]) }}">je contribue</a>
                     </div>
                     <div class="recent-cause-funding">
                         <div class="fund-line">

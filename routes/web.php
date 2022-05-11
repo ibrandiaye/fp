@@ -24,3 +24,10 @@ Route::resource('categorie', 'CategorieController');
 Route::resource('donateur', 'DonateurController');
 Route::get('/blogs','BlogController@listes')->name('listes.article');
 Route::get('/blogs/{id}','BlogController@getBlogById')->name('front.one.blog');
+Route::get('/contact', function () {
+    return view('front.contact');
+})->name('contact');
+Route::get('/a-propos', function () {
+    return view('front.a-propos');
+})->name('apropos');
+Route::get('/projet/contribution/{id}','DonateurController@viewFormDonnation')->name('view.form.donnation');

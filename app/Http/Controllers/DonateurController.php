@@ -107,4 +107,9 @@ class DonateurController extends Controller
     {
         //
     }
+    public function viewFormDonnation($id){
+        $projet = $this->projetRepository->getById($id);
+        return view('front.paiement',compact('projet'));
+
+    }
 }

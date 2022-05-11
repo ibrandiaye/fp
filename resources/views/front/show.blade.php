@@ -20,9 +20,9 @@
         <div class="row">
             <div class="col-sm-4 col-md-3" id="cause-sticky">
                 <div class="sidebar-left">
-                    <a class="btn-donate" href="donation.html">Particper</a>
+                    <a class="btn-donate" href="{{ route('view.form.donnation', ['id'=>$projet->id]) }}">je contribue</a>
                     <div class="cause-leader hidden-xs">
-                        <h3>Porteur<br> {{ $projet->porteur->nom }}</h3>
+                        <h3>Nom de la Collectivté <br> {{ $projet->porteur->nom }}</h3>
                         {{--  <div class="thumb">
                             <img src="images/our-team/1.jpg" alt="leader">
                         </div>  --}}

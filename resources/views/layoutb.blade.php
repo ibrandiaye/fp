@@ -66,7 +66,7 @@
                     </div>
                     <div class="hidden-xs hidden-sm col-md-3 col-lg-4 ">
 
-                                        <a href="donation.html" class="btn btn-red">Faire un Don</a>
+                                        <a href="donation.html" class="btn btn-red">Faire un Don à enda ECOPOP</a>
 
                     </div>
                     <div class="hidden-xs col-sm-6 col-md-4 col-lg-4">
@@ -120,6 +120,8 @@
                             <li><a href="{{ route('home') }}">Accueil</a></li>
                             <li><a href="{{ route('list.projet') }}">Projets</a></li>
                             <li><a href="{{ route('listes.article') }}">Actualités</a></li>
+                            <li><a href="{{ route('contact') }}">Contact</a></li>
+                            <li><a href="{{ route('apropos') }}">A propos</a></li>
                            {{--   <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
@@ -171,7 +173,6 @@
                                     <li><a href="register.html">Register</a></li>
                                 </ul>
                             </li>  --}}
-                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                         {{--  <ul class="nav navbar-nav navbar-right hidden-xs">
                             <li class="top-cart">
@@ -194,7 +195,7 @@
                     <div class="col-md-3 col-sm-6 footer-widget">
                         <div class="footer-logo">
                             <img class="retina" src="{{ asset('images/logo.png') }}" alt="logo">
-                            <p>Yelen-Fin en abrégé (Y-Fin) est une plateforme de financement participatif (crowdfunding) crée par Enda ECOPOP , pour appuyer les projets et programmes de développement des collectivités et des villes africaines.</p>
+                            <p>Ye-Fina en abrégé (Y-Fin) est une plateforme de financement participatif (crowdfunding) crée par Enda ECOPOP , pour appuyer les projets et programmes de développement des collectivités et des villes africaines.</p>
                             <div class="footer-social">
                                 <a href="#"><i class="fa fa-twitter-square"></i></a>
                                 <a href="#"><i class="fa fa-linkedin-square"></i></a>
