@@ -22,12 +22,15 @@
                 <div class="sidebar-left">
                     <a class="btn-donate" href="{{ route('view.form.donnation', ['id'=>$projet->id]) }}">je contribue</a>
                     <div class="cause-leader hidden-xs">
-                        <h3>Nom de la Collectivté <br> {{ $projet->porteur->nom }}</h3>
+                        <h3>Collectivité <br> {{ $projet->lieu }}</h3>
                         {{--  <div class="thumb">
                             <img src="images/our-team/1.jpg" alt="leader">
                         </div>  --}}
-                        {!! $projet->porteur->description !!}
-                        <span class="cause-mail"><i class="fa fa-envelope-o"></i>{{ $projet->porteur->email }}</span>
+                        <h4>Personne Contact</h4>
+                        <span class="cause-mail"><i class="fa fa-user-o"></i>{{ $projet->porteur->nom }}</span>
+                        <br><span class="cause-mail"><i class="fa fa-envelope-o"></i>{{ $projet->porteur->email }}</span>
+                        <br><span class="cause-mail"><i class="fa fa-phone"></i>{{ $projet->porteur->tel }}</span>
+                        <br><span class="cause-mail"><i class="fa fa-tag"></i> {!! $projet->porteur->description !!}</span>
                         {{--  <div class="social">
                             <a href="#"><i class="fa fa-facebook-square"></i></a>
                             <a href="#"><i class="fa fa-twitter-square"></i></a>
@@ -56,7 +59,7 @@
                                         <span><a href="#"><i class="fa fa-globe"></i>{{ $projet->lieu }}</a></span>
                                     </div>
                                     <div class="catagory">
-                                        <i class="fa fa-folder-open" aria-hidden="true"></i> <a href="#">{{ $projet->categorie }}</a>
+                                        <i class="fa fa-folder-open" aria-hidden="true"></i> <a href="#">{{ $projet->categorie->nomc }}</a>
                                     </div>
                                     <div class="cause-summary">
                                         <h3 style="">Description du projet</h3>
@@ -173,7 +176,7 @@
                                 </div>
                             </div>  --}}
                             <div class="cause-gallery">
-                                <h3>Cause Gallery</h3>
+                                <h3>Images</h3>
                                 <div class="row">
                                     @foreach ($projet->images as $image)
                                     <div class="col-sm-4">

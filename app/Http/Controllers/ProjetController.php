@@ -89,8 +89,8 @@ class ProjetController extends Controller
         }
         $request->merge(['porteur_id'=>$porteur->id]);
         $projet = $this->projetRepository->store($request->only(['titre','descriptionp','montant',
-        'photo','lieu','latitude','longitude','porteur_id','etat','categorie']));
-        if(count($request['gal']) > 0){
+        'photo','lieu','latitude','longitude','porteur_id','etat','categorie_id']));
+        if($request['gal']){
             $fichiers = $request['gal'];
             $nombreFichier = count($request['gal']);
             for($x = 0; $x < $nombreFichier; $x++) {

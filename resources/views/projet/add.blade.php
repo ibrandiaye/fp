@@ -31,7 +31,7 @@
 
 
              <div class="card border-success border-0">
-                        <div class="card-header bg-info text-center">Porteur de Projet</div>
+                        <div class="card-header bg-info text-center">Information Personne Contact</div>
                             <div class="card-body">
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
@@ -63,7 +63,7 @@
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-group">
-                                                <label>Description</label>
+                                                <label>Titre du Porteur</label>
                                                 <textarea class="textarea"
                                                 style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" name="description">{{ old('description') }}</textarea>
 

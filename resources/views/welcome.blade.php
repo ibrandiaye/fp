@@ -128,7 +128,7 @@
                     <div class="recent-cause-content">
                         <h3 class="recent-cause-title"><a href="{{ route('front.one.projet', ['id'=>$projet->id]) }}">{{ $projet->titre }}</a></h3>
                         <div class="cause-location"><i class="fa fa-globe" aria-hidden="true"></i> <a href="#">{{ $projet->lieu }}</a> </div>
-                        <div class="cause-tags"><i class="fa fa-tags" aria-hidden="true"></i> <a href="#">{{ $projet->categorie }}</a></div>
+                        <div class="cause-tags"><i class="fa fa-tags" aria-hidden="true"></i> <a href="#">{{ $projet->categorie->nomc }}</a></div>
                         <a class="btn mg-top-40" href="{{ route('view.form.donnation', ['id'=>$projet->id]) }}">je contribue</a>
                     </div>
                     <div class="recent-cause-funding">
