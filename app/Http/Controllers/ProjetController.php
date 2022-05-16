@@ -87,7 +87,8 @@ class ProjetController extends Controller
             $file->move($destinationPath, $docName);
             $request->merge(['photo'=>$docName,'etat'=>'non cloturé']);
         }
-        $request->merge(['porteur_id'=>$porteur->id]);
+        $request->merge(['porteur_id'=>$porteur->id,'categorie'=>$request->categorie_id]);
+
         $projet = $this->projetRepository->store($request->only(['titre','descriptionp','montant',
         'photo','lieu','latitude','longitude','porteur_id','etat','categorie_id']));
         if($request['gal']){
